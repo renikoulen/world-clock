@@ -35,7 +35,20 @@ function updateTime() {
       .tz("Europe/Berlin")
       .format("h:mm:ss [<small>]A[</small>]");
   }
+  // Johannesburg
+  let johannesburgElement = document.querySelector("#johannesburg");
+  if (johannesburgElement) {
+    let johannesburgDateElement = johannesburgElement.querySelector(".date");
+    let johannesburgTimeElement = johannesburgElement.querySelector(".time");
+    johannesburgDateElement.innerHTML = moment()
+      .tz("Africa/Johannesburg")
+      .format("MMMM Do, YYYY");
+    johannesburgTimeElement.innerHTML = moment
+      .tz("Africa/Johannesburg")
+      .format("h:mm:ss [<small>]A[</small>]");
+  }
 }
+
 function updateCity(event) {
   let cityTimezone = event.target.value;
   if (cityTimezone === "current") {

@@ -1,5 +1,9 @@
 body {
   background-color: #f9f7fe;
+  background-image: url("/images/Astronomische_Uhr_Nikolaikirche_Stralsund.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.6;
   font-family: sans-serif;
 }
 
@@ -57,5 +61,11 @@ select {
 }
 
 footer {
+
+  padding: 10px;
+  max-width: 600px;
+  margin:0 auto;
+  border-radius: 10px;
+  background: #f9f7fe;
   text-align: center;
 }
