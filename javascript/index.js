@@ -69,10 +69,12 @@ function updateCity(event) {
         </div>
         <a href="index.html">All cities</a>
  `;
+ 
+ let citiesSelectElement = document.querySelector("#city");
+citiesSelectElement.addEventListener("change", updateCity);
 }
 
 updateTime();
 setInterval(updateTime, 1000);
 
-let citiesSelectElement = document.querySelector("#city");
-citiesSelectElement.addEventListener("change", updateCity);
+
